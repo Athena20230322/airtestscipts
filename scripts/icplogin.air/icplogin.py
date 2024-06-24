@@ -53,10 +53,10 @@ sleep(1.0)
 
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 poco(text="版本與登入紀錄").click()
-sleep(1.0)
-
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+sleep(1.0)
 poco(text="常見問題").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 sleep(1.0)
 poco(text="服務條款").click()
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
