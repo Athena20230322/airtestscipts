@@ -8,8 +8,6 @@ auto_setup(__file__)
 
 #from poco.drivers.ios import iosPoco
 #poco = iosPoco()
-
-
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 #poco("tw.com.icash.a.icashpay.debuging:id/action").click()
@@ -29,11 +27,9 @@ poco("tw.com.icash.a.icashpay.debuging:id/title_left").click()
 poco("tw.com.icash.a.icashpay.debuging:id/title_right").click()
 poco(text="自帶杯儲值").click()
 sleep(1.0)
-
 poco("tw.com.icash.a.icashpay.debuging:id/close").click()
 poco(text="中獎發票儲值").click()
 sleep(1.0)
-
 poco("tw.com.icash.a.icashpay.debuging:id/close").click()
 poco("tw.com.icash.a.icashpay.debuging:id/title_right").click()
 poco("tw.com.icash.a.icashpay.debuging:id/fund").click()
@@ -41,7 +37,6 @@ poco("tw.com.icash.a.icashpay.debuging:id/loan").click()
 poco("tw.com.icash.a.icashpay.debuging:id/personal").click()
 poco(text="交易限額").click()
 sleep(1.0)
-
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 poco("tw.com.icash.a.icashpay.debuging:id/lvSetting").click()
 sleep(1.0)
@@ -49,7 +44,6 @@ poco(text="授權扣款管理").click()
 sleep(1.0)
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 sleep(1.0)
-
 poco(text="使用教學").click()
 sleep(1.0)
 poco(text="確定前往").click()
@@ -67,9 +61,13 @@ poco(text="服務條款").click()
 poco(text="確定前往").click()
 poco("com.android.systemui:id/back").click()
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
-poco(text="聯絡我們").click()
+poco('Scpoco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/fragment_container").offspring("tw.com.icash.a.icashpay.debuging:id/content_container").offspring("tw.com.icash.a.icashpay.debuging:id/lvInformation").child("android.widget.LinearLayout")[1]')
+swipe(Template(r"tpl1728356826998.png", record_pos=(-0.453, 0.598), resolution=(1080, 2400)), vector=[0.1837, 0.0157])
+
+
+touch(Template(r"tpl1728356065967.png", record_pos=(-0.304, 0.574), resolution=(1080, 2400)))
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
-sleep(1.0)
+sleep(2.0)
 poco("android.widget.ImageView").click()
 poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/nav").offspring("android.widget.ImageView").click()
 poco("tw.com.icash.a.icashpay.debuging:id/text").click()
@@ -85,3 +83,41 @@ poco("tw.com.icash.a.icashpay.debuging:id/member_image").click()
 poco("tw.com.icash.a.icashpay.debuging:id/all_image").click()
 poco("tw.com.icash.a.icashpay.debuging:id/close").click()
 sleep(1.0)
+poco(text="生活服務").click()
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/fragment_container").offspring("tw.com.icash.a.icashpay.debuging:id/scroll_view").offspring("tw.com.icash.a.icashpay.debuging:id/home_container").child("android.widget.LinearLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/function_service").offspring("tw.com.icash.a.icashpay.debuging:id/invoice").child("android.widget.ImageView").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/fragment_container").offspring("tw.com.icash.a.icashpay.debuging:id/scroll_view").offspring("tw.com.icash.a.icashpay.debuging:id/home_container").child("android.widget.LinearLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/function_service").offspring("tw.com.icash.a.icashpay.debuging:id/bus_code").child("android.widget.ImageView").click()
+poco("tw.com.icash.a.icashpay.debuging:id/text").click()
+poco(text="2").click()
+poco(text="4").click()
+poco(text="6").click()
+poco(text="7").click()
+poco(text="9").click()
+poco(text="0").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+#icash 2.0
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/fragment_container").offspring("tw.com.icash.a.icashpay.debuging:id/scroll_view").offspring("tw.com.icash.a.icashpay.debuging:id/home_container").child("android.widget.LinearLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/function_service").offspring("tw.com.icash.a.icashpay.debuging:id/icash").child("android.widget.ImageView").click()
+sleep(1.0)
+# 新卡上市
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[0].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+
+poco("com.android.systemui:id/back").click()
+#icash2.0記名
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[1].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+#活動快訊
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[2].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+#聯名卡優惠
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[3].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+#使用通路
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[4].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+#掛失服務
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[4].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+#NFC查詢
+poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[6].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
