@@ -1,5 +1,5 @@
 # -*- encoding=utf8 -*-
-__author__ = "P10381190"
+__author__ = "Adan"
 
 from airtest.core.api import *
 
@@ -77,6 +77,7 @@ poco(text="6").click()
 poco(text="7").click()
 poco(text="9").click()
 poco(text="0").click()
+sleep(2.0)
 poco("tw.com.icash.a.icashpay.debuging:id/payment_qrcode").click()
 poco("tw.com.icash.a.icashpay.debuging:id/invoice_image").click()
 poco("tw.com.icash.a.icashpay.debuging:id/member_image").click()
@@ -99,16 +100,17 @@ poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/fragment_container").offspring("tw.com.icash.a.icashpay.debuging:id/scroll_view").offspring("tw.com.icash.a.icashpay.debuging:id/home_container").child("android.widget.LinearLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/function_service").offspring("tw.com.icash.a.icashpay.debuging:id/icash").child("android.widget.ImageView").click()
 sleep(1.0)
 # 新卡上市
-poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[0].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
-
-poco("com.android.systemui:id/back").click()
+poco(text="新卡上市").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").swipe([0.0, -0.0017])
 #icash2.0記名
 #poco(text="確定前往").click()
 #poco("com.android.systemui:id/back").click()
 #poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 #icash2.0記名
-poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[1].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
+poco(text="icash2.0記名").click()
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+
+
 #活動快訊
 poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/rv_card_entrance").child("tw.com.icash.a.icashpay.debuging:id/cv_card_entrance")[2].offspring("tw.com.icash.a.icashpay.debuging:id/img_card_entrance_icon").click()
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
@@ -134,4 +136,8 @@ poco("tw.com.icash.a.icashpay.debuging:id/title_left").click()
 swipe(Template(r"tpl1728960640515.png", record_pos=(0.197, -0.083), resolution=(1080, 2400)), vector=[0.0106, -0.2408])
 
 poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/fragment_container").offspring("tw.com.icash.a.icashpay.debuging:id/scroll_view").offspring("tw.com.icash.a.icashpay.debuging:id/home_container").offspring("tw.com.icash.a.icashpay.debuging:id/cash_bank_container").offspring("tw.com.icash.a.icashpay.debuging:id/cashback_more").child("android.widget.TextView").click()
-poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/text").click()
+poco(text="確定前往").click()
+poco("com.android.systemui:id/back").click()
+poco("tw.com.icash.a.icashpay.debuging:id/base_title").click()
+poco("tw.com.icash.a.icashpay.debuging:id/title_left").swipe([0.0, -0.0017])
