@@ -61,7 +61,6 @@ poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offsprin
 sleep(1.0)
 poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
 poco("android.widget.FrameLayout").child("android.widget.LinearLayout").offspring("tw.com.icash.a.icashpay.debuging:id/base_container").offspring("tw.com.icash.a.icashpay.debuging:id/nav").offspring("android.widget.ImageView").click()
-poco("tw.com.icash.a.icashpay.debuging:id/home_text").click()
 poco(text="2").click()
 poco(text="4").click()
 poco(text="6").click()
