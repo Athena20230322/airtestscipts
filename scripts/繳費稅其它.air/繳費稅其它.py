@@ -1,0 +1,52 @@
+# -*- encoding=utf8 -*-
+__author__ = "Adan"
+
+from airtest.core.api import *
+
+auto_setup(__file__)
+from poco.drivers.android.uiautomation import AndroidUiautomationPoco
+poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
+import time
+poco(text="繳費稅").click()
+poco(text="水費").click()
+poco(text="臺北自來水事業處").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco(text="台灣自來水費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco(text="電信費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/title").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco(text="電費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/title").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+swipe(Template(r"tpl1729756744686.png", record_pos=(0.33, -0.564), resolution=(1080, 2400)), vector=[-0.5547, -0.0034])
+
+poco(text="瓦斯費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco(text="學雜費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/title").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco(text="醫療費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/title").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+swipe(Template(r"tpl1729757002169.png", record_pos=(0.345, -0.624), resolution=(1080, 2400)), vector=[-0.5962, -0.0102])
+
+poco(text="保險費").click()
+poco(text="富邦產險").click()
+wait(Template(r"tpl1729758496503.png", record_pos=(-0.003, -0.063), resolution=(1080, 2400)))
+poco("tw.com.icash.a.icashpay.debuging:id/positive_button").click()
+sleep(1.0)
+poco("com.android.systemui:id/back").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+sleep(2.0)
+poco(text="新光人壽保險費").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarLeftArrow").click()
+poco(text="燃料稅").click()
+poco("tw.com.icash.a.icashpay.debuging:id/toolbarRightImage").click()
+poco(text="錢包").click()
