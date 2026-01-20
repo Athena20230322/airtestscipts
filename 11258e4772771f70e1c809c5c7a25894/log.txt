@@ -1,0 +1,1 @@
+{"tag": "function", "depth": 1, "time": 1768878759.3916998, "data": {"name": "connect_device", "call_args": {"uri": "android://127.0.0.1:5037/emulator-5554?touch_method=MAXTOUCH&"}, "start_time": 1768878756.4274426, "ret": "<Android 'emulator-5554'>", "end_time": 1768878759.3916998}}
